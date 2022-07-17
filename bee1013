@@ -2,17 +2,17 @@
 
     int main()
     {
-         int a, b, c, tmp;
-         scanf("%d %d %d", &a, &b, &c);
-         tmp = a;
-         if(a < b || a < c){
-             if(b < c){
-             tmp = c;
+         int x, y, z, tmp;
+         scanf("%d %d %d", &x, &y, &z);
+         tmp = x;
+         if(x < y || x < z){
+             if(y < z){
+             tmp = z;
              }
          else{
-               tmp = b;
+               tmp = y;
             }
         }
         printf("%d eh o maior\n", tmp);
         return 0;
-    }    
+    }              
