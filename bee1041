@@ -1,28 +1,15 @@
-#include<stdio.h>
+#include <stdio.h>
 int main()
 {
-    double first, second, third, fourth, last, sum;
-    scanf("%lf %lf %lf %lf", &first, &second, &third, &fourth);
-    sum = (first * 2 + second * 3 + third * 4 + fourth) / 10;
-    printf("Media: %.1f\n", sum);
-    if (sum >= 7.0){
-        printf("Aluno aprovado.\n");
-    }
-    else if (sum >= 5.0)
-    {
-        printf("Aluno em exame.\n");
-        scanf("%lf", &last);
-        printf("Nota do exame: %.1f\n", last);
-        if (last + sum / 2.0 > 5.0){
-            printf("Aluno aprovado.\n");
-        }
-        else{
-            printf("Aluno reprovado.\n");
-        }
-        printf("Media final: %.1f\n", (last + sum ) / 2.0);
-    }
-    else{
-        printf("Aluno reprovado.\n");
-    }
+    double X,Y;
+    scanf ("%lf%lf", &X, &Y);
+
+    if (X + Y == 0) printf("Origem\n");
+    else if (X == 0) printf("Eixo Y\n");
+    else if (Y == 0) printf("Eixo X\n");
+    else if (X>0 && Y>0) printf("Q1\n");
+    else if (X<0 && Y>0) printf("Q2\n");
+    else if (X<0 && Y<0) printf("Q3\n");
+    else if (X>0 && Y<0) printf("Q4\n");
     return 0;
 }
