@@ -2,13 +2,12 @@
 int main()
 {
 int a, b;
-scanf("%d %d", &A, &B);
-if (b % a == 0 || a % b == 0)
+scanf("%d %d", &a, &b);
+if (b%a==0|| a%b==0)
 {
 printf("Sao Multiplos\n");
 }
-else
-{
+else{
 printf("Nao sao Multiplos\n");
 }
 return 0;
