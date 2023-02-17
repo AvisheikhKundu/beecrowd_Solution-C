@@ -1,2 +1,2 @@
-# beecrowed_Solution-C
+# beecrowed_Solution
 C Language 
